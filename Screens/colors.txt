@@ -1,0 +1,5 @@
+#000000 black
+#36494E secondary
+#597081 mid
+#7EA0B7 semi light
+#A9CEF4 light

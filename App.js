@@ -1,9 +1,12 @@
 import react from "react";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import { NavigationContainer } from "@react-navigation/native";
-import Home from "./components/Dashboard/Home";
-import Welcome from "./components/SignUpLogIn/Welcome";
-import Details from "./components/Dashboard/Details";
+import Welcome from "./Screens/Welcome";
+import Details from "./Screens/Details"
+import Home from './Screens/Home';
+import Profile from './Screens/Profile';
+import Settings from './Screens/Settings'
+
 
 const Stack=createNativeStackNavigator();
 
@@ -14,15 +17,11 @@ export default function App() {
         <Stack.Screen name="Welcome" component={Welcome}/>
         <Stack.Screen name="Home" component={Home}/>
         <Stack.Screen name="Details" component={Details}/>
+        <Stack.Screen name="Profile" component={Profile}/>
+        <Stack.Screen name="Settings" component={Settings}/>
       </Stack.Navigator> 
     </NavigationContainer>
   );
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+
