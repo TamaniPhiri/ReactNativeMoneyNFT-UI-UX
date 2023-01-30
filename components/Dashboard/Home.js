@@ -6,7 +6,7 @@ import { createDrawerNavigator } from '@react-navigation/drawer';
 
 const Drawer= createDrawerNavigator();
 
-const Home = () => {
+const Home = ({navigation}) => {
   return (
     <Drawer.Navigator>
         <Drawer.Screen name="Profile" component={Profile}/>
